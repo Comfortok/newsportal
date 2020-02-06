@@ -21,6 +21,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -36,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1XHf9r2Rp9J1htlNXrSzTUacJx9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages" />
@@ -279,7 +285,7 @@
       <workItem from="1580794052443" duration="5108000" />
       <workItem from="1580814338425" duration="4618000" />
       <workItem from="1580900966948" duration="852000" />
-      <workItem from="1580901838523" duration="907000" />
+      <workItem from="1580901838523" duration="1503000" />
     </task>
     <servers />
   </component>
@@ -291,6 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1580787946554" />
+    <state x="552" y="182" key="#Notifications" timestamp="1580963267765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="182" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1580963267765" />
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580901034314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -367,6 +377,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580797911013" />
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580963255380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580963255380" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1580718181234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
