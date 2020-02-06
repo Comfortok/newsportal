@@ -52,9 +52,9 @@ public class ArticleController {
         return "articles";
     }
 
-    @RequestMapping("articleinfo/{id}")
+    @RequestMapping("articleInfo/{id}")
     public String articleInfo(@PathVariable("id") int id, Model model) {
         model.addAttribute("article", this.articleService.getArticleById(id));
-        return "articleinfo";
+        return "articleInfo";
     }
 }

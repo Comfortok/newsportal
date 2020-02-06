@@ -1,6 +1,7 @@
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ page session="false" %>
 <%--
   Created by IntelliJ IDEA.
@@ -68,15 +69,17 @@
             <th width="120">Date</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
+            <th width="60">View</th>
         </tr>
         <c:forEach items="${listArticles}" var="article">
             <tr>
                 <td>${article.id}</td>
                 <td>${article.header}</td>
                 <td>${article.text}</td>
-                <td><a href="/articleinfo/${article.id}" target="_blank">${article.releaseDate}</a></td>
+                <td><fmt:formatDate pattern="dd/MM/YYYY" value="${article.releaseDate}" /></td>
                 <td><a href="<c:url value="/edit/${article.id}"/>">Edit</a></td>
                 <td><a href="<c:url value="/remove/${article.id}"/>">Delete</a></td>
+                <td><a href="/articleInfo/${article.id}" target="_blank">View</a></td>
             </tr>
         </c:forEach>
     </table>
