@@ -1,7 +1,0 @@
-com\epam\training\newsportal\service\ArticleServiceImpl.class
-com\epam\training\newsportal\controller\ArticleController.class
-com\epam\training\newsportal\service\ArticleService.class
-com\epam\training\newsportal\entity\Article.class
-com\epam\training\newsportal\dao\ArticleDaoImpl.class
-com\epam\training\newsportal\TestRun.class
-com\epam\training\newsportal\dao\ArticleDao.class

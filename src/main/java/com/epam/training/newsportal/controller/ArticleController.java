@@ -25,6 +25,7 @@ public class ArticleController {
     public String listArticles(Model model) {
             model.addAttribute("article", new Article());
             model.addAttribute("listArticles", this.articleService.getAllArticles());
+        System.out.println(model.getAttribute("listArticles"));
             return "articles";
     }
 
