@@ -21,22 +21,20 @@ public class ArticleController {
         this.articleService = articleService;
     }
 
-    @RequestMapping(value = "articles", method = RequestMethod.GET)
+    @RequestMapping(value = "/articles", method = RequestMethod.GET)
     public String listArticles(Model model) {
             model.addAttribute("article", new Article());
             model.addAttribute("listArticles", this.articleService.getAllArticles());
-        System.out.println(model.getAttribute("listArticles"));
             return "articles";
     }
 
     @RequestMapping(value = "/articles/add", method = RequestMethod.POST)
-    public String addBook(@ModelAttribute("article") Article article){
+    public String addArticle(@ModelAttribute("article") Article article){
         if(article.getId() == 0){
             this.articleService.createArticle(article);
         }else {
             this.articleService.editArticle(article);
         }
-
         return "redirect:/articles";
     }
 
@@ -47,14 +45,14 @@ public class ArticleController {
         return "redirect:/articles";
     }
 
-    @RequestMapping(value = "edit/{id}")
+    @RequestMapping(value = "/edit/{id}")
     public String editArticle(@PathVariable("id") int id, Model model) {
         model.addAttribute("article", this.articleService.getArticleById(id));
         model.addAttribute("listArticles", this.articleService.getAllArticles());
         return "articles";
     }
 
-    @RequestMapping(value = "article/{id}")
+    @RequestMapping("articleinfo/{id}")
     public String articleInfo(@PathVariable("id") int id, Model model) {
         model.addAttribute("article", this.articleService.getArticleById(id));
         return "articleinfo";

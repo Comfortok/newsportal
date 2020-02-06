@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ page session="false" %>
@@ -58,8 +58,6 @@
 <br/>
 <h1>Articles</h1>
 
-<c:out value="${listArticles.get(0)}"/>
-
 <c:if test="${!empty listArticles}">
     <h4>H4 in if</h4>
     <table class="tg">
@@ -74,9 +72,9 @@
         <c:forEach items="${listArticles}" var="article">
             <tr>
                 <td>${article.id}</td>
-                <td><a href="/article/${article.id}" target="_blank">${article.header}</a></td>
+                <td>${article.header}</td>
                 <td>${article.text}</td>
-                <td>${article.releaseDate}</td>
+                <td><a href="/articleinfo/${article.id}" target="_blank">${article.releaseDate}</a></td>
                 <td><a href="<c:url value="/edit/${article.id}"/>">Edit</a></td>
                 <td><a href="<c:url value="/remove/${article.id}"/>">Delete</a></td>
             </tr>
@@ -84,13 +82,11 @@
     </table>
 </c:if>
 
-<%--<h1>Add an article</h1>--%>
+<h1>Add an article</h1>
 
-<%--<c:url var="addArticle" value="/articles/add"/>
+<c:url var="addArticle" value="/articles/add"/>
 
-
-
-<form:form action="${addArticle}" commandName="article">
+<form:form action="${addArticle}" modelAttribute="article">
     <table>
         <c:if test="${!empty article.header}">
             <tr>
@@ -107,7 +103,7 @@
         </c:if>
         <tr>
             <td>
-                <form:label path="articleHeader">
+                <form:label path="header">
                     <spring:message text="Header"/>
                 </form:label>
             </td>
@@ -117,7 +113,7 @@
         </tr>
         <tr>
             <td>
-                <form:label path="articleText">
+                <form:label path="text">
                     <spring:message text="Text"/>
                 </form:label>
             </td>
@@ -127,12 +123,12 @@
         </tr>
         <tr>
             <td>
-                <form:label path="date">
+                <form:label path="releaseDate">
                     <spring:message text="Date"/>
                 </form:label>
             </td>
             <td>
-                <form:input path="date"/>
+                <form:input path="releaseDate"/>
             </td>
         </tr>
         <tr>
@@ -148,6 +144,6 @@
             </td>
         </tr>
     </table>
-</form:form>--%>
+</form:form>
 </body>
 </html>
