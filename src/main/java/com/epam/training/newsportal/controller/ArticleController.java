@@ -28,14 +28,19 @@ public class ArticleController {
             return "articles";
     }
 
-    @RequestMapping(value = "/articles/add", method = RequestMethod.POST)
-    public String addArticle(@ModelAttribute("article") Article article){
-        if(article.getId() == 0){
-            this.articleService.createArticle(article);
-        }else {
-            this.articleService.editArticle(article);
-        }
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String addArticle(@ModelAttribute("article") Article article) {
+        System.out.println("addArticle method");
+        System.out.println(article.getHeader() + " : " + article.getId());
+        this.articleService.createArticle(article);
         return "redirect:/articles";
+    }
+
+    @RequestMapping("/add")
+    public String newArticleForm(Model model) {
+        model.addAttribute("article", new Article());
+        System.out.println("addForm method");
+        return "addForm";
     }
 
     @RequestMapping(value = "/remove/{id}")

@@ -20,6 +20,7 @@ public class ArticleDaoImpl implements ArticleDao {
     @Override
     public void createArticle(Article article) {
         sessionFactory.getCurrentSession().saveOrUpdate(article);
+        System.out.println("Article dao. An article was created");
         logger.info("An article " + article + " is successfully created.");
     }
 

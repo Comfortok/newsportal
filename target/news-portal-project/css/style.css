@@ -1,0 +1,63 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% auto;
+    padding: 10px;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: auto 15%;
+    padding: 5px;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.item1 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.item2 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+    float: left;
+    font-size: 16px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article {
+    font-size: 14px;
+}
+
+.date-cell {
+    font-size: 14px;
+}
+
+.modify-cell {
+    font-size: 14px;
+}
+
+.body {
+    width: available;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    font-size: 26px;
+}
+
+.header-right {
+    float: right;
+    font-size: 14px;
+}

@@ -8,7 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/pages/articles.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +64,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1XHf9r2Rp9J1htlNXrSzTUacJx9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,19 +82,20 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF\pages" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\controller" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\service" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -281,16 +290,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2e227a1b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -314,7 +314,11 @@
       <workItem from="1580814338425" duration="4618000" />
       <workItem from="1580900966948" duration="852000" />
       <workItem from="1580901838523" duration="5228000" />
-      <workItem from="1580967043725" duration="10794000" />
+      <workItem from="1580967043725" duration="13402000" />
+      <workItem from="1581054821974" duration="625000" />
+      <workItem from="1581055491951" duration="5413000" />
+      <workItem from="1581069379583" duration="3120000" />
+      <workItem from="1581307667102" duration="17503000" />
     </task>
     <servers />
   </component>
@@ -346,58 +350,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580901997604" />
+    <state x="711" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581055448260">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1581055448260" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1580717981473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580717981473" />
-    <state width="1608" height="251" key="GridCell.Tab.0.bottom" timestamp="1580986942277">
+    <state width="1608" height="272" key="GridCell.Tab.0.bottom" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942277" />
-    <state width="1608" height="251" key="GridCell.Tab.0.center" timestamp="1580986942277">
+    <state width="1608" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.0.center" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942277" />
-    <state width="1608" height="251" key="GridCell.Tab.0.left" timestamp="1580986942277">
+    <state width="1608" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.0.left" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942277" />
-    <state width="1608" height="251" key="GridCell.Tab.0.right" timestamp="1580986942277">
+    <state width="1608" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.0.right" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942277" />
-    <state width="1608" height="251" key="GridCell.Tab.1.bottom" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.1.bottom" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.1.center" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
+    <state width="1608" height="272" key="GridCell.Tab.1.center" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.1.left" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.1.left" timestamp="1581328294235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.1.right" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294235" />
+    <state width="1608" height="272" key="GridCell.Tab.1.right" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.2.bottom" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
+    <state width="1608" height="272" key="GridCell.Tab.2.bottom" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.2.center" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
+    <state width="1608" height="272" key="GridCell.Tab.2.center" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.2.left" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
+    <state width="1608" height="272" key="GridCell.Tab.2.left" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
-    <state width="1608" height="251" key="GridCell.Tab.2.right" timestamp="1580986942227">
+    <state width="1608" height="272" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
+    <state width="1608" height="272" key="GridCell.Tab.2.right" timestamp="1581328294236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="251" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580986942227" />
+    <state width="1608" height="272" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581328294236" />
     <state x="490" y="179" key="Maven.ArtifactSearchDialog" timestamp="1580708132718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
