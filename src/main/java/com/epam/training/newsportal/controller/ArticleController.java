@@ -2,14 +2,18 @@ package com.epam.training.newsportal.controller;
 
 import com.epam.training.newsportal.entity.Article;
 import com.epam.training.newsportal.service.ArticleService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class ArticleController {
@@ -61,5 +65,18 @@ public class ArticleController {
     public String articleInfo(@PathVariable("id") int id, Model model) {
         model.addAttribute("article", this.articleService.getArticleById(id));
         return "articleInfo";
+    }
+
+    @RequestMapping(value = "remove", method = RequestMethod.POST)
+    public String remove(HttpServletRequest request, ModelMap modelMap) {
+        String[] articleId = request.getParameterValues("articleId");
+        if (articleId != null) {
+            for (String id : articleId) {
+                this.articleService.removeArticle(Integer.parseInt(id));
+            }
+        } else {
+            modelMap.put("error", "error in remove method");
+        }
+        return "articles";
     }
 }

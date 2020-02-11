@@ -7,16 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/classes/com/epam/training/newsportal/dao/ArticleDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/news-portal-project/WEB-INF/pages/articles.jsp" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,6 +99,18 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install:install-file -Dfile=C:\Users\Olzhas_Khassenov\IdeaProjects\ojdbc7.jar -DgroupId=com.oracle -DartifactId=ojdbc7 -Dversion=12.1.0.2 -Dpackaging=jar " />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat4Spring">
@@ -276,29 +286,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.12932901" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -319,11 +306,23 @@
       <workItem from="1581055491951" duration="5413000" />
       <workItem from="1581069379583" duration="3120000" />
       <workItem from="1581307667102" duration="17503000" />
+      <workItem from="1581430301319" duration="2832000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Assign_Data_Sources" timestamp="1580787946554">
