@@ -2,6 +2,7 @@ package com.epam.training.newsportal.entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "ARTICLE")
@@ -19,6 +20,8 @@ public class Article {
 
     @Column(name = "RELEASE_DATE")
     private Date releaseDate;
+
+    private boolean isChecked = true;
 
     public int getId() {
         return id;
@@ -50,6 +53,14 @@ public class Article {
 
     public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
+    }
+
+    public boolean getIsChecked() {
+        return isChecked;
+    }
+
+    public void setIsChecked(boolean checked) {
+        isChecked = checked;
     }
 
     @Override
