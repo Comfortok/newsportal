@@ -23,7 +23,11 @@
     </div>
 
     <div class="grid-item item2">
+        <c:if test="${!empty requestScope.error}">
+            <c:out value="${requestScope.error}"/>
+        </c:if>
         <c:if test="${!empty listArticles}">
+            <form method="post" action="${pageContext.request.contextPath}/remove">
             <c:forEach items="${listArticles}" var="article">
                 <div class="grid-table">
                     <div class="grid-item">
@@ -44,12 +48,16 @@
                         <div class="modify-cell">
                             <a href="<c:url value="/edit/${article.id}"/>">Edit</a>
                             <a href="/articleInfo/${article.id}" target="_blank">View</a>
-                            <a href="<c:url value="/remove/${article.id}"/>">Delete</a>
+                            <td>
+                                <input type="checkbox" value="${article.id}" name="articleId">
+                            </td>
                         </div>
                     </div>
                     <br/>
                 </div>
             </c:forEach>
+            <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>
+            </form>
         </c:if>
     </div>
 </div>

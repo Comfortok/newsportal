@@ -1,64 +1,54 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
+<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css">
 <head>
-    <title>Article Data</title>
-
-    <style type="text/css">
-        .tg {
-            border-collapse: collapse;
-            border-spacing: 0;
-            border-color: #ccc;
-        }
-
-        .tg td {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: #ccc;
-            color: #333;
-            background-color: #fff;
-        }
-
-        .tg th {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-            padding: 10px 5px;
-            border-style: solid;
-            border-width: 1px;
-            overflow: hidden;
-            word-break: normal;
-            border-color: #ccc;
-            color: #333;
-            background-color: #f0f0f0;
-        }
-
-        .tg .tg-4eph {
-            background-color: #f9f9f9
-        }
-    </style>
+    <c:import url="header.jsp" charEncoding="UTF-8"/>
 </head>
 <body>
-<h1>Article details</h1>
 
-<table class="tg">
-    <tr>
-        <th width="80">ID</th>
-        <th width="120">Header</th>
-        <th width="150">Text</th>
-        <th width="80">Date</th>
-    </tr>
-    <tr>
-        <td>${article.id}</td>
-        <td>${article.header}</td>
-        <td>${article.text}</td>
-        <td>${article.releaseDate}</td>
-    </tr>
-</table>
+<div class="grid-container">
+    <div class="grid-item item1">
+        <div class="nav">
+            <ul>
+                <li><a href="<c:url value="/articles"/>" target="_blank">News list</a></li>
+                <li><a href="<c:url value="/add"/>">Add news</a></li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="grid-item item2">
+            <form method="post" action="${pageContext.request.contextPath}/add">
+                    <div class="grid-table table2">
+                        <div class="grid-item">
+                            News Title
+                        </div>
+                        <div class="grid-item">
+                            ${article.header}
+                        </div>
+                        <div class="grid-item">
+                            News Date
+                        </div>
+                        <div class="grid-item">
+                            ${article.releaseDate}
+                        </div>
+                        <div class="grid-item">
+                            News Text
+                        </div>
+                        <div class="grid-item">
+                            ${article.text}
+                        </div>
+                        <br/>
+                    </div>
+                <input type="submit" value="Edit"/>
+            </form>
+
+        <form method="post" action="${pageContext.request.contextPath}/remove/${article.id}">
+            <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>
+        </form>
+    </div>
+</div>
+
+<c:import url="footer.jsp" charEncoding="UTF-8"/>
 </body>
 </html>
