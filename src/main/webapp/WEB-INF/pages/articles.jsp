@@ -28,13 +28,12 @@
         </c:if>
         <c:if test="${!empty listArticles}">
             <form method="post" action="${pageContext.request.contextPath}/remove">
-                <c:forEach items="${listArticles}" var="article">
-                    <div class="grid-table">
-                        <div class="grid-item">
-                            <div class="article">
-                                <p>${article.header}</p>
-                                <p>${article.text}</p>
-                            </div>
+            <c:forEach items="${listArticles}" var="article">
+                <div class="grid-table">
+                    <div class="grid-item">
+                        <div class="article">
+                            <p>${article.header}</p>
+                            <p>${article.text}</p>
                         </div>
                         <div class="grid-item">
                             <div class="date-cell">
@@ -56,7 +55,9 @@
                         </div>
                         <br/>
                     </div>
-                </c:forEach>
+                    <br/>
+                </div>
+            </c:forEach>
                 <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>
             </form>
         </c:if>

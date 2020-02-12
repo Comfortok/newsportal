@@ -2,6 +2,7 @@ package com.epam.training.newsportal.controller;
 
 import com.epam.training.newsportal.entity.Article;
 import com.epam.training.newsportal.service.ArticleService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
