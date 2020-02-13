@@ -31,17 +31,25 @@ public class ArticleController {
             return "articles";
     }
 
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/articles/save", method = RequestMethod.POST)
     public String addArticle(@ModelAttribute("article") Article article) {
-        this.articleService.createArticle(article);
+        System.out.println("addArticle method starts");
+        if (article.getId() == 0) {
+            System.out.println("addArticle.id=0");
+            this.articleService.createArticle(article);
+        } else {
+            System.out.println("addArticle.id!=0");
+            this.articleService.editArticle(article);
+        }
         return "redirect:/articles";
     }
 
     @RequestMapping("/add")
     public String newArticleForm(@ModelAttribute("article") Article article, Model model) {
-        if (article.getId() != 0) {
+        System.out.println(article.getId() + " -- id");
+        //if (article.getId() != 0) {
             model.addAttribute(article);
-        }
+        //}
         return "addForm";
     }
 
@@ -53,9 +61,10 @@ public class ArticleController {
 
     @RequestMapping(value = "/edit/{id}")
     public String editArticle(@PathVariable("id") int id, Model model) {
+        System.out.println("id in editArticle = " + id);
         model.addAttribute("article", this.articleService.getArticleById(id));
-        model.addAttribute("listArticles", this.articleService.getAllArticles());
-        return "articles";
+        //model.addAttribute("listArticles", this.articleService.getAllArticles());
+        return "addForm";
     }
 
     @RequestMapping("articleInfo/{id}")

@@ -18,7 +18,7 @@
     </div>
 
     <div class="grid-item item2">
-            <form method="post" action="${pageContext.request.contextPath}/add">
+            <form method="post" action="${pageContext.request.contextPath}/edit/${article.id}">
                     <div class="grid-table table2">
                         <div class="grid-item">
                             News Title

@@ -11,10 +11,10 @@ public class TestRun {
             Connection connection = null;
 
 
-            String url = "jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain";
+            String url = "jdbc:mysql://localhost:3306/news_portal?serverTimezone=UTC";
 
-            String username = "dummy";
-            String password = "dummy";
+            String username = "root";
+            String password = "admin";
 
             connection = DriverManager.getConnection(url, username, password);
 
