@@ -18,30 +18,30 @@
     </div>
 
     <div class="grid-item item2">
-            <form method="post" action="${pageContext.request.contextPath}/edit/${article.id}">
-                    <div class="grid-table table2">
-                        <div class="grid-item">
-                            News Title
-                        </div>
-                        <div class="grid-item">
-                            ${article.header}
-                        </div>
-                        <div class="grid-item">
-                            News Date
-                        </div>
-                        <div class="grid-item">
-                            ${article.releaseDate}
-                        </div>
-                        <div class="grid-item">
-                            News Text
-                        </div>
-                        <div class="grid-item">
-                            ${article.text}
-                        </div>
-                        <br/>
-                    </div>
-                <input type="submit" value="Edit"/>
-            </form>
+        <form method="post" action="${pageContext.request.contextPath}/edit/${article.id}">
+            <div class="grid-table table2">
+                <div class="grid-item">
+                    News Title
+                </div>
+                <div class="grid-item">
+                    ${article.header}
+                </div>
+                <div class="grid-item">
+                    News Date
+                </div>
+                <div class="grid-item">
+                    ${article.releaseDate}
+                </div>
+                <div class="grid-item">
+                    News Text
+                </div>
+                <div class="grid-item">
+                    ${article.text}
+                </div>
+                <br/>
+            </div>
+            <input type="submit" value="Edit"/>
+        </form>
 
         <form method="post" action="${pageContext.request.contextPath}/remove/${article.id}">
             <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>

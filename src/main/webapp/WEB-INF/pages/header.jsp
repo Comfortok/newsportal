@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="header">
-    <a href="#default" class="logo">News Management</a>
+    <a href="${pageContext.request.contextPath}/articles" class="logo">News Management</a>
     <div class="header-right">
         <a href="#eng">English</a>
         <a href="#rus">Russian</a>
