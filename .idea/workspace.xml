@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="" />
+    <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,16 +82,18 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olzhas\IdeaProjects\newsportal\src\main\resources" />
+      <recent name="C:\Users\Olzhas\IdeaProjects\newsportal\src\main\resources\locale" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF\pages" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\controller" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\service" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -300,7 +307,7 @@
       <workItem from="1581055491951" duration="5413000" />
       <workItem from="1581069379583" duration="3120000" />
       <workItem from="1581307667102" duration="17503000" />
-      <workItem from="1581592551651" duration="11596000" />
+      <workItem from="1581592551651" duration="17133000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ page session="false"%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
@@ -10,13 +11,16 @@
     <c:import url="header.jsp" charEncoding="UTF-8"/>
 </head>
 <body>
-
 <div class="grid-container">
     <div class="grid-item item1">
         <div class="nav">
             <ul>
-                <li><a href="<c:url value="/articles"/>" target="_blank">News list</a></li>
-                <li><a href="<c:url value="/add"/>">Add news</a></li>
+                <li><a href="<c:url value="/articles"/>">
+                    <spring:message code="nav.list" text=""/>
+                </a></li>
+                <li><a href="<c:url value="/add"/>">
+                    <spring:message code="nav.add"/>
+                </a></li>
             </ul>
         </div>
     </div>

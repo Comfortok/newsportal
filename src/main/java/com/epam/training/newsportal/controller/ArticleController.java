@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Locale;
 
 @Controller
 public class ArticleController {
@@ -25,7 +26,8 @@ public class ArticleController {
     }
 
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
-    public String listArticles(Model model) {
+    public String listArticles(Model model, Locale locale) {
+        System.out.println("current locale is: " + locale);
             model.addAttribute("article", new Article());
             model.addAttribute("listArticles", this.articleService.getAllArticles());
             return "articles";
