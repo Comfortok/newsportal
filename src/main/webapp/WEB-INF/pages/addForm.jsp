@@ -38,6 +38,7 @@
                 </div>
                 <div class="grid-item">
                     <form:input path="header"/>
+                    <form:errors path="header" cssStyle="color: red" />
                 </div>
                 <div class="grid-item">
                     <form:label path="releaseDate">

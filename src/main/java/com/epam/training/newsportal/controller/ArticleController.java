@@ -7,12 +7,15 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResultUtils;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.Locale;
 
 @Controller
@@ -34,7 +37,10 @@ public class ArticleController {
     }
 
     @RequestMapping(value = "/articles/save", method = RequestMethod.POST)
-    public String addArticle(@ModelAttribute("article") Article article) {
+    public String addArticle(@Valid @ModelAttribute("article") Article article, Errors errors) {
+        if (errors.hasErrors()) {
+            return "addForm";
+        }
         System.out.println("addArticle method starts");
         if (article.getId() == 0) {
             System.out.println("addArticle.id=0");

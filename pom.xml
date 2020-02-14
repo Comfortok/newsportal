@@ -63,6 +63,12 @@
       <artifactId>hibernate-entitymanager</artifactId>
       <version>5.2.2.Final</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>6.1.0.Final</version>
+    </dependency>
 
     <!-- Apache Commons DBCP -->
     <dependency>

@@ -65,3 +65,8 @@
     float: right;
     font-size: 14px;
 }
+
+.errorC {
+    color: red;
+    font-size: 10px;
+}
