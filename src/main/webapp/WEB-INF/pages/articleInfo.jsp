@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css">
@@ -11,8 +12,12 @@
     <div class="grid-item item1">
         <div class="nav">
             <ul>
-                <li><a href="<c:url value="/articles"/>" target="_blank">News list</a></li>
-                <li><a href="<c:url value="/add"/>">Add news</a></li>
+                <li><a href="<c:url value="/articles"/>">
+                    <spring:message code="nav.list"/>
+                </a></li>
+                <li><a href="<c:url value="/add"/>">
+                    <spring:message code="nav.add"/>
+                </a></li>
             </ul>
         </div>
     </div>
@@ -21,30 +26,31 @@
         <form method="post" action="${pageContext.request.contextPath}/edit/${article.id}">
             <div class="grid-table table2">
                 <div class="grid-item">
-                    News Title
+                    <spring:message code="article.title"/>
                 </div>
                 <div class="grid-item">
                     ${article.header}
                 </div>
                 <div class="grid-item">
-                    News Date
+                    <spring:message code="article.date"/>
                 </div>
                 <div class="grid-item">
                     ${article.releaseDate}
                 </div>
                 <div class="grid-item">
-                    News Text
+                    <spring:message code="article.text"/>
                 </div>
                 <div class="grid-item">
                     ${article.text}
                 </div>
                 <br/>
             </div>
-            <input type="submit" value="Edit"/>
+            <input type="submit" value="<spring:message code="article.edit"/>"/>
         </form>
 
         <form method="post" action="${pageContext.request.contextPath}/remove/${article.id}">
-            <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>
+            <input type="submit" value="<spring:message code="article.delete"/>"
+                   onclick="return confirm('<spring:message code="onclick.delete"/>')"/>
         </form>
     </div>
 </div>

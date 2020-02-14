@@ -16,7 +16,7 @@
         <div class="nav">
             <ul>
                 <li><a href="<c:url value="/articles"/>">
-                    <spring:message code="nav.list" text=""/>
+                    <spring:message code="nav.list"/>
                 </a></li>
                 <li><a href="<c:url value="/add"/>">
                     <spring:message code="nav.add"/>
@@ -49,8 +49,12 @@
                         </div>
                         <div class="grid-item">
                             <div class="modify-cell">
-                                <a href="<c:url value="/edit/${article.id}"/>">Edit</a>
-                                <a href="/articleInfo/${article.id}" target="_blank">View</a>
+                                <a href="<c:url value="/edit/${article.id}"/>">
+                                    <spring:message code="article.edit"/>
+                                </a>
+                                <a href="/articleInfo/${article.id}" target="_blank">
+                                    <spring:message code="article.view"/>
+                                </a>
                                 <td>
                                     <input type="checkbox" value="${article.id}" name="articleId">
                                 </td>
@@ -59,7 +63,8 @@
                         <br/>
                     </div>
                 </c:forEach>
-                <input type="submit" value="Delete" onclick="return confirm('Sure, man?')"/>
+                <input type="submit" value="<spring:message code="article.delete"/>"
+                       onclick="return confirm('<spring:message code="onclick.delete"/>')"/>
             </form>
         </c:if>
     </div>

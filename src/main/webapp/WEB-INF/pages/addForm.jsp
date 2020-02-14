@@ -14,8 +14,12 @@
     <div class="grid-item item1">
         <div class="nav">
             <ul>
-                <li><a href="<c:url value="/articles"/>" target="_blank">News list</a></li>
-                <li><a href="<c:url value="/add"/>">Add news</a></li>
+                <li><a href="<c:url value="/articles"/>">
+                    <spring:message code="nav.list"/>
+                </a></li>
+                <li><a href="<c:url value="/add"/>">
+                    <spring:message code="nav.add"/>
+                </a></li>
             </ul>
         </div>
     </div>
@@ -29,7 +33,7 @@
             <div class="grid-table table2">
                 <div class="grid-item">
                     <form:label path="header">
-                        <spring:message text="Header"/>
+                        <spring:message code="article.title"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
@@ -37,7 +41,7 @@
                 </div>
                 <div class="grid-item">
                     <form:label path="releaseDate">
-                        <spring:message text="Release Date"/>
+                        <spring:message code="article.date"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
@@ -45,7 +49,7 @@
                 </div>
                 <div class="grid-item">
                     <form:label path="text">
-                        <spring:message text="Text"/>
+                        <spring:message code="article.text"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
@@ -53,7 +57,7 @@
                 </div>
                 <br/>
             </div>
-            <input type="submit" value="Save"/>
+            <input type="submit" value="<spring:message code="button.save"/>"/>
         </form:form>
     </div>
 </div>
