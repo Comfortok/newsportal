@@ -1,5 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css">
@@ -25,22 +26,22 @@
     <div class="grid-item item2">
         <form method="post" action="${pageContext.request.contextPath}/edit/${article.id}">
             <div class="grid-table table2">
-                <div class="grid-item">
+                <div class="grid-item item3">
                     <spring:message code="article.title"/>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item item3">
                     ${article.header}
                 </div>
-                <div class="grid-item">
+                <div class="grid-item item3">
                     <spring:message code="article.date"/>
                 </div>
-                <div class="grid-item">
-                    ${article.releaseDate}
+                <div class="grid-item item3">
+                    <fmt:formatDate type="date" value="${article.releaseDate}" pattern="yyyy/MM/dd"/>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item item3">
                     <spring:message code="article.text"/>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item item3">
                     ${article.text}
                 </div>
                 <br/>

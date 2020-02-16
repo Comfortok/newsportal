@@ -2,6 +2,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
 <head>
@@ -32,29 +33,31 @@
             </c:if>
             <div class="grid-table table2">
                 <div class="grid-item">
-                    <form:label path="header">
+                    <form:label path="header" cssStyle="font-size: 14px">
                         <spring:message code="article.title"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
                     <form:input path="header"/>
-                    <form:errors path="header" cssStyle="color: red" />
+                    <form:errors path="header" cssStyle="color: red; font-size: 12px" />
                 </div>
                 <div class="grid-item">
-                    <form:label path="releaseDate">
+                    <form:label path="releaseDate" cssStyle="font-size: 14px">
                         <spring:message code="article.date"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
                     <form:input path="releaseDate"/>
+                    <form:errors path="releaseDate" cssStyle="color: red; font-size: 12px" />
                 </div>
                 <div class="grid-item">
-                    <form:label path="text">
+                    <form:label path="text" cssStyle="font-size: 14px">
                         <spring:message code="article.text"/>
                     </form:label>
                 </div>
                 <div class="grid-item">
                     <form:input path="text"/>
+                    <form:errors path="text" cssStyle="color: red; font-size: 12px" />
                 </div>
                 <br/>
             </div>

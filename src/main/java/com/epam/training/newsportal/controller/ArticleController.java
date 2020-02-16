@@ -4,18 +4,18 @@ import com.epam.training.newsportal.entity.Article;
 import com.epam.training.newsportal.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResultUtils;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 @Controller
@@ -31,9 +31,16 @@ public class ArticleController {
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
     public String listArticles(Model model, Locale locale) {
         System.out.println("current locale is: " + locale);
-            model.addAttribute("article", new Article());
-            model.addAttribute("listArticles", this.articleService.getAllArticles());
-            return "articles";
+        model.addAttribute("article", new Article());
+        model.addAttribute("listArticles", this.articleService.getAllArticles());
+        return "articles";
+    }
+
+    @InitBinder
+    public void dataBinding(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, "releaseDate", new CustomDateEditor(dateFormat, true));
     }
 
     @RequestMapping(value = "/articles/save", method = RequestMethod.POST)
@@ -55,9 +62,7 @@ public class ArticleController {
     @RequestMapping("/add")
     public String newArticleForm(@ModelAttribute("article") Article article, Model model) {
         System.out.println(article.getId() + " -- id");
-        //if (article.getId() != 0) {
-            model.addAttribute(article);
-        //}
+        model.addAttribute(article);
         return "addForm";
     }
 
@@ -69,9 +74,7 @@ public class ArticleController {
 
     @RequestMapping(value = "/edit/{id}")
     public String editArticle(@PathVariable("id") int id, Model model) {
-        System.out.println("id in editArticle = " + id);
         model.addAttribute("article", this.articleService.getArticleById(id));
-        //model.addAttribute("listArticles", this.articleService.getAllArticles());
         return "addForm";
     }
 

@@ -2,7 +2,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ page session="false"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page session="false" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
@@ -41,7 +42,8 @@
                         </div>
                         <div class="grid-item">
                             <div class="date-cell">
-                                    ${article.releaseDate}
+                                <fmt:formatDate pattern="yyyy/MM/dd"
+                                                value="${article.releaseDate}"/>
                             </div>
                         </div>
 
@@ -52,7 +54,7 @@
                                 <a href="<c:url value="/edit/${article.id}"/>">
                                     <spring:message code="article.edit"/>
                                 </a>
-                                <a href="/articleInfo/${article.id}" target="_blank">
+                                <a href="/articleInfo/${article.id}">
                                     <spring:message code="article.view"/>
                                 </a>
                                 <td>
