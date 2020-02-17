@@ -7,7 +7,7 @@
 <body>
 <h3>Articles okay</h3>
 <br/>
-<a href="<c:url value="/articles"/>" target="_blank">Article list</a>
+<a href="<c:url value="/articles"/>">Article list</a>
 <br/>
 </body>
 </html>
