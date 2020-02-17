@@ -18,12 +18,12 @@ public class Article {
     private int id;
 
     @Column(name = "HEADER")
-    @Size(min=2, message = "Can not be less than 2 symbols")
+    @Size(min=2, max=100, message = "Can not be less than 2 symbols")
     @NotEmpty(message = "Title can not be empty")
     private String header;
 
     @Column(name = "TEXT")
-    @Size(min=2, message = "Can not be less than 2 symbols")
+    @Size(min=2, max=2548, message = "Can not be less than 2 symbols")
     @NotEmpty(message = "Text can not be empty")
     private String text;
 
