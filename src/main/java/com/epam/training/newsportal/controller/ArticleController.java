@@ -23,7 +23,7 @@ public class ArticleController {
     private ArticleService articleService;
 
     @Autowired
-    @Qualifier(value = "articleService")
+    //@Qualifier(value = "articleService")
     public void setArticleService(ArticleService articleService) {
         this.articleService = articleService;
     }
@@ -43,7 +43,7 @@ public class ArticleController {
         binder.registerCustomEditor(Date.class, "releaseDate", new CustomDateEditor(dateFormat, true));
     }
 
-    @RequestMapping(value = "/articles/save", method = RequestMethod.POST)
+    @PostMapping(value = "/articles/save")
     public String addArticle(@Valid @ModelAttribute("article") Article article, Errors errors) {
         if (errors.hasErrors()) {
             return "addForm";

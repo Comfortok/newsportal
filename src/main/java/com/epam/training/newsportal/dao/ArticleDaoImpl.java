@@ -4,15 +4,19 @@ import com.epam.training.newsportal.entity.Article;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public class ArticleDaoImpl implements ArticleDao {
+
     private static final Logger logger = LoggerFactory.getLogger(ArticleDaoImpl.class);
+
     private SessionFactory sessionFactory;
 
+    @Autowired
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }

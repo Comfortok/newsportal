@@ -65,7 +65,7 @@
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
     <dependency>
-      <groupId>org.hibernate</groupId>
+      <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>6.1.0.Final</version>
     </dependency>
@@ -186,6 +186,9 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.2.2</version>
+          <!--<configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>-->
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>

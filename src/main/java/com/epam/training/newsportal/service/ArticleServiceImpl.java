@@ -2,6 +2,7 @@ package com.epam.training.newsportal.service;
 
 import com.epam.training.newsportal.dao.ArticleDao;
 import com.epam.training.newsportal.entity.Article;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,6 +10,8 @@ import java.util.List;
 
 @Service
 public class ArticleServiceImpl implements ArticleService {
+
+    @Autowired
     private ArticleDao articleDao;
 
     public void setArticleDao(ArticleDao articleDao) {

@@ -8,9 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articles.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,24 +84,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF\pages" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\controller" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\service" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -322,7 +325,7 @@
       <workItem from="1581055491951" duration="5413000" />
       <workItem from="1581069379583" duration="3120000" />
       <workItem from="1581307667102" duration="17503000" />
-      <workItem from="1581920064059" duration="7182000" />
+      <workItem from="1581920064059" duration="25094000" />
     </task>
     <servers />
   </component>
@@ -346,10 +349,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580967515276" />
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1580796141024">
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1582012620524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580796141024" />
+    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582012620524" />
     <state x="552" y="182" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1580901033465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -366,62 +369,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580717981473" />
-    <state width="1608" height="285" key="GridCell.Tab.0.bottom" timestamp="1581938265375">
+    <state width="1608" height="164" key="GridCell.Tab.0.bottom" timestamp="1582020355652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265375" />
-    <state width="1608" height="285" key="GridCell.Tab.0.center" timestamp="1581938265375">
+    <state width="1608" height="164" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355652" />
+    <state width="1608" height="164" key="GridCell.Tab.0.center" timestamp="1582020355652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265375" />
-    <state width="1608" height="285" key="GridCell.Tab.0.left" timestamp="1581938265375">
+    <state width="1608" height="164" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355652" />
+    <state width="1608" height="164" key="GridCell.Tab.0.left" timestamp="1582020355652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265375" />
-    <state width="1608" height="285" key="GridCell.Tab.0.right" timestamp="1581938265375">
+    <state width="1608" height="164" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355652" />
+    <state width="1608" height="164" key="GridCell.Tab.0.right" timestamp="1582020355652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265375" />
-    <state width="1608" height="285" key="GridCell.Tab.1.bottom" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355652" />
+    <state width="1608" height="164" key="GridCell.Tab.1.bottom" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.1.center" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.1.center" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.1.left" timestamp="1581938265375">
+    <state width="1608" height="164" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.1.left" timestamp="1582020355652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265375" />
-    <state width="1608" height="285" key="GridCell.Tab.1.right" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355652" />
+    <state width="1608" height="164" key="GridCell.Tab.1.right" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.2.bottom" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.2.bottom" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.2.center" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.2.center" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.2.left" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.2.left" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
-    <state width="1608" height="285" key="GridCell.Tab.2.right" timestamp="1581938265376">
+    <state width="1608" height="164" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
+    <state width="1608" height="164" key="GridCell.Tab.2.right" timestamp="1582020355653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="285" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581938265376" />
+    <state width="1608" height="164" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582020355653" />
     <state x="490" y="179" key="Maven.ArtifactSearchDialog" timestamp="1580708132718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="179" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580708132718" />
-    <state x="463" y="166" key="SettingsEditor" timestamp="1581931618232">
+    <state x="463" y="166" key="SettingsEditor" timestamp="1582019384266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581931618232" />
+    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582019384266" />
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580963255380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
