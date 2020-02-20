@@ -1,7 +1,5 @@
 package com.epam.training.newsportal.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -10,6 +8,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "ARTICLE")
+@NamedQuery(name = "getAnArticleById", query = "SELECT e from Article e where e.id = :id")
 public class Article {
 
     @Id
@@ -29,7 +28,6 @@ public class Article {
 
     @Column(name = "RELEASE_DATE")
     @NotNull(message = "Date can not be empty")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     private Date releaseDate;
 
     public int getId() {

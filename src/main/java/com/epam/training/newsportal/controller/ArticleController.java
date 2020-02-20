@@ -3,7 +3,6 @@ package com.epam.training.newsportal.controller;
 import com.epam.training.newsportal.entity.Article;
 import com.epam.training.newsportal.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,14 +22,12 @@ public class ArticleController {
     private ArticleService articleService;
 
     @Autowired
-    //@Qualifier(value = "articleService")
     public void setArticleService(ArticleService articleService) {
         this.articleService = articleService;
     }
 
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
     public String listArticles(Model model, Locale locale) {
-        System.out.println("current locale is: " + locale);
         model.addAttribute("article", new Article());
         model.addAttribute("listArticles", this.articleService.getAllArticles());
         return "articles";
