@@ -2,6 +2,7 @@ package com.epam.training.newsportal.controller;
 
 import com.epam.training.newsportal.entity.Article;
 import com.epam.training.newsportal.service.ArticleService;
+import com.epam.training.newsportal.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
@@ -19,11 +20,18 @@ import java.util.Locale;
 
 @Controller
 public class ArticleController {
+
     private ArticleService articleService;
+    private CommentService commentService;
 
     @Autowired
     public void setArticleService(ArticleService articleService) {
         this.articleService = articleService;
+    }
+
+    @Autowired
+    public void setCommentService(CommentService commentService) {
+        this.commentService = commentService;
     }
 
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
@@ -77,7 +85,13 @@ public class ArticleController {
 
     @RequestMapping("articleInfo/{id}")
     public String articleInfo(@PathVariable("id") int id, Model model) {
+        System.out.println("articleInfo start");
         model.addAttribute("article", this.articleService.getArticleById(id));
+        System.out.println("article model added");
+        Article article = new Article();
+        article.setId(id);
+        model.addAttribute("listComments", this.commentService.getAllComments(article));
+        System.out.println("model listComments added");
         return "articleInfo";
     }
 

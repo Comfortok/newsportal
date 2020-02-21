@@ -5,6 +5,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "ARTICLE")
@@ -29,6 +30,11 @@ public class Article {
     @Column(name = "RELEASE_DATE")
     @NotNull(message = "Date can not be empty")
     private Date releaseDate;
+
+    //@OneToMany(cascade=CascadeType.ALL)
+    //@JoinColumn(name="ARTICLE_ID")
+    @Transient
+    private Set<Comment> comments;
 
     public int getId() {
         return id;

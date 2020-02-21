@@ -1,6 +1,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css">
@@ -53,6 +54,38 @@
             <input type="submit" value="<spring:message code="article.delete"/>"
                    onclick="return confirm('<spring:message code="onclick.delete"/>')"/>
         </form>
+        <br/>
+        <br/>
+        <br/>
+        Add comment:
+        <form method="post" action="${pageContext.request.contextPath}/comments/save">
+            <div class="grid-table table2">
+                <div class="grid-item">
+                    <form:label path="text" cssStyle="font-size: 14px">
+                        <spring:message code="article.text"/>
+                    </form:label>
+                </div>
+                <div class="grid-item">
+                    <form:textarea path="text" rows="5" cols="40"/>
+                </div>
+                    <input type="text" />
+                <br/>
+            </div>
+            <input type="submit" value="<spring:message code="button.save"/>"/>
+        </form>
+        Comments:
+        <br/>
+        <div class="grid-table table2">
+            <c:forEach items="${listComments}" var="comment">
+            <div class="grid-item item3">
+                <spring:message code="comment.text"/>
+            </div>
+            <div class="grid-item item3">
+                ${comment.text}
+            </div>
+            <br/>
+            </c:forEach>
+        </div>
     </div>
 </div>
 

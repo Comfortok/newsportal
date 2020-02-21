@@ -11,9 +11,9 @@ import java.util.List;
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
-    @Autowired
     private ArticleDao articleDao;
 
+    @Autowired
     public void setArticleDao(ArticleDao articleDao) {
         this.articleDao = articleDao;
     }
