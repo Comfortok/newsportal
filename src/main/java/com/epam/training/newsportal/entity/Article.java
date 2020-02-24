@@ -31,6 +31,11 @@ public class Article {
     @NotNull(message = "Date can not be empty")
     private Date releaseDate;
 
+    @ManyToOne
+    @JoinColumn(name = "USER_ID")
+    private User user;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @Transient
     private Set<Comment> comments;
 

@@ -30,12 +30,13 @@ public class ArticleDaoImpl implements ArticleDao {
         this.sessionFactory = sessionFactory;
     }
 
-    @Override
+    @Override//TODO user_id --> change
     public void createArticle(Article article) {
-        entityManager.createNativeQuery("INSERT INTO ARTICLE(HEADER, TEXT, RELEASE_DATE) VALUES(?,?,?)")
+        entityManager.createNativeQuery("INSERT INTO ARTICLE(HEADER, TEXT, RELEASE_DATE, USER_ID) VALUES(?,?,?,?)")
                 .setParameter(1, article.getHeader())
                 .setParameter(2, article.getText())
                 .setParameter(3, article.getReleaseDate())
+                .setParameter(4, 1)
                 .executeUpdate();
         System.out.println("Article dao. An article was created with header " + article.getHeader());
         logger.info("An article " + article + " is successfully created.");

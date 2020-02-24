@@ -30,11 +30,12 @@ public class CommentDaoImpl implements CommentDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Override
+    @Override//TODO user_id --> change
     public void createComment(Comment comment, int id) {
-        entityManager.createNativeQuery("INSERT INTO COMMENTS(TEXT, ARTICLE_ID) VALUES(?, ?)")
+        entityManager.createNativeQuery("INSERT INTO COMMENTS(TEXT, ARTICLE_ID, USER_ID) VALUES(?, ?, ?)")
                 .setParameter(1, comment.getText())
                 .setParameter(2, id)
+                .setParameter(3, 1)
                 .executeUpdate();
         System.out.println("Comment dao. Comment was created with id " + comment.getId());
         logger.info("Comment " + comment + " is successfully created.");

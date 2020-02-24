@@ -16,10 +16,13 @@ public class Comment {
     @Column(name = "TEXT")
     private String text;
 
-    //@Column(name = "ARTICLE_ID")
     @ManyToOne
     @JoinColumn(name = "article_id")
     private Article article;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     public int getId() {
         return id;
