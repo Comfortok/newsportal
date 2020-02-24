@@ -1,6 +1,7 @@
 package com.epam.training.newsportal.controller;
 
 import com.epam.training.newsportal.entity.Article;
+import com.epam.training.newsportal.entity.Comment;
 import com.epam.training.newsportal.service.ArticleService;
 import com.epam.training.newsportal.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,15 +84,12 @@ public class ArticleController {
         return "addForm";
     }
 
-    @RequestMapping("articleInfo/{id}")
-    public String articleInfo(@PathVariable("id") int id, Model model) {
-        System.out.println("articleInfo start");
-        model.addAttribute("article", this.articleService.getArticleById(id));
-        System.out.println("article model added");
-        Article article = new Article();
-        article.setId(id);
+    @RequestMapping(value = "articleInfo/{id}", method = RequestMethod.GET)
+    public String articleInfo(@PathVariable("id") int id, Model model, @ModelAttribute("comment") Comment comment) {
+        Article article = this.articleService.getArticleById(id);
+        model.addAttribute("article", article);
         model.addAttribute("listComments", this.commentService.getAllComments(article));
-        System.out.println("model listComments added");
+        model.addAttribute("comment", comment);
         return "articleInfo";
     }
 
@@ -105,6 +103,13 @@ public class ArticleController {
         } else {
             modelMap.put("error", "error in remove method");
         }
+        return "redirect:/articles";
+    }
+
+    @PostMapping(value = "/comments/save/{id}")
+    public String addComment(@ModelAttribute("comment") Comment comment, @PathVariable("id") int id) {
+        System.out.println("addComment method starts");
+        this.commentService.createComment(comment, id);
         return "redirect:/articles";
     }
 }

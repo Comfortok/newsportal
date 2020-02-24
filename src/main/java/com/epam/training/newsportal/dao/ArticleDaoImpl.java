@@ -75,7 +75,7 @@ public class ArticleDaoImpl implements ArticleDao {
     @Override
     @SuppressWarnings("unchecked")
     public List<Article> getAllArticles() {
-        Query query = entityManager.createQuery("select e from Article e order by e.releaseDate asc");
+        Query query = entityManager.createQuery("select e from Article e order by e.releaseDate desc");
         logger.info("All articles were selected.");
         return (List<Article>) query.getResultList();
     }

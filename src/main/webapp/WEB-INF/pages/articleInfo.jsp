@@ -58,7 +58,7 @@
         <br/>
         <br/>
         Add comment:
-        <form method="post" action="${pageContext.request.contextPath}/comments/save">
+        <form:form action="${pageContext.request.contextPath}/comments/save/${article.id}" modelAttribute="comment">
             <div class="grid-table table2">
                 <div class="grid-item">
                     <form:label path="text" cssStyle="font-size: 14px">
@@ -68,24 +68,23 @@
                 <div class="grid-item">
                     <form:textarea path="text" rows="5" cols="40"/>
                 </div>
-                    <input type="text" />
                 <br/>
             </div>
             <input type="submit" value="<spring:message code="button.save"/>"/>
-        </form>
+        </form:form>
         Comments:
         <br/>
-        <div class="grid-table table2">
-            <c:forEach items="${listComments}" var="comment">
-            <div class="grid-item item3">
-                <spring:message code="comment.text"/>
+        <c:forEach items="${listComments}" var="comment">
+            <div class="grid-table table2">
+                <div class="grid-item">
+                    <spring:message code="comment.text"/>
+                </div>
+                <div class="grid-item">
+                        ${comment.text}
+                </div>
+                <br/>
             </div>
-            <div class="grid-item item3">
-                ${comment.text}
-            </div>
-            <br/>
-            </c:forEach>
-        </div>
+        </c:forEach>
     </div>
 </div>
 
