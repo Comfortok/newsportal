@@ -6,9 +6,9 @@ import com.epam.training.newsportal.entity.Comment;
 import java.util.List;
 
 public interface CommentDao {
-    void createComment(Comment comment, int id);
-    void removeComment(int id);
+    void createComment(Comment comment, long id);
+    void removeComment(long id);
     void editComment(Comment comment);
-    Comment getCommentById(int id);
+    Comment getCommentById(long id);
     List<Comment> getAllComments(Article article);
 }

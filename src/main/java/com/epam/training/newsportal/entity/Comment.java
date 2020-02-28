@@ -11,21 +11,24 @@ public class Comment {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "TEXT")
     private String text;
 
-    //@Column(name = "ARTICLE_ID")
     @ManyToOne
     @JoinColumn(name = "article_id")
     private Article article;
 
-    public int getId() {
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

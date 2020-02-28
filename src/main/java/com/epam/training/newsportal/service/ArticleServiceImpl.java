@@ -26,7 +26,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     @Transactional
-    public void removeArticle(int id) {
+    public void removeArticle(long id) {
         this.articleDao.removeArticle(id);
     }
 
@@ -38,7 +38,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     @Transactional
-    public Article getArticleById(int id) {
+    public Article getArticleById(long id) {
         return this.articleDao.getArticleById(id);
     }
 

@@ -15,7 +15,7 @@ public class Article {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "HEADER")
     @Size(min=2, max=100, message = "Can not be less than 2 symbols")
@@ -31,16 +31,19 @@ public class Article {
     @NotNull(message = "Date can not be empty")
     private Date releaseDate;
 
-    //@OneToMany(cascade=CascadeType.ALL)
-    //@JoinColumn(name="ARTICLE_ID")
+    @ManyToOne
+    @JoinColumn(name = "USER_ID")
+    private User user;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @Transient
     private Set<Comment> comments;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

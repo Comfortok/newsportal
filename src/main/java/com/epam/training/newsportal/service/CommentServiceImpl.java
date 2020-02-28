@@ -21,13 +21,13 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     @Transactional
-    public void createComment(Comment comment, int id) {
+    public void createComment(Comment comment, long id) {
         this.commentDao.createComment(comment, id);
     }
 
     @Override
     @Transactional
-    public void removeComment(int id) {
+    public void removeComment(long id) {
         this.commentDao.removeComment(id);
     }
 
@@ -39,7 +39,7 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     @Transactional
-    public Comment getCommentById(int id) {
+    public Comment getCommentById(long id) {
         return this.commentDao.getCommentById(id);
     }
 
