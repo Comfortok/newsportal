@@ -2,6 +2,7 @@ package com.epam.training.newsportal.service;
 
 import com.epam.training.newsportal.dao.ArticleDao;
 import com.epam.training.newsportal.entity.Article;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,8 +10,10 @@ import java.util.List;
 
 @Service
 public class ArticleServiceImpl implements ArticleService {
+
     private ArticleDao articleDao;
 
+    @Autowired
     public void setArticleDao(ArticleDao articleDao) {
         this.articleDao = articleDao;
     }
@@ -23,7 +26,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     @Transactional
-    public void removeArticle(int id) {
+    public void removeArticle(long id) {
         this.articleDao.removeArticle(id);
     }
 
@@ -35,7 +38,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     @Transactional
-    public Article getArticleById(int id) {
+    public Article getArticleById(long id) {
         return this.articleDao.getArticleById(id);
     }
 

@@ -1,9 +1,10 @@
 package com.epam.training.newsportal.controller;
 
 import com.epam.training.newsportal.entity.Article;
+import com.epam.training.newsportal.entity.Comment;
 import com.epam.training.newsportal.service.ArticleService;
+import com.epam.training.newsportal.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,17 +21,22 @@ import java.util.Locale;
 
 @Controller
 public class ArticleController {
+
     private ArticleService articleService;
+    private CommentService commentService;
 
     @Autowired
-    @Qualifier(value = "articleService")
     public void setArticleService(ArticleService articleService) {
         this.articleService = articleService;
     }
 
+    @Autowired
+    public void setCommentService(CommentService commentService) {
+        this.commentService = commentService;
+    }
+
     @RequestMapping(value = "/articles", method = RequestMethod.GET)
-    public String listArticles(Model model, Locale locale) {
-        System.out.println("current locale is: " + locale);
+    public String listArticles(Model model) {
         model.addAttribute("article", new Article());
         model.addAttribute("listArticles", this.articleService.getAllArticles());
         return "articles";
@@ -43,7 +49,7 @@ public class ArticleController {
         binder.registerCustomEditor(Date.class, "releaseDate", new CustomDateEditor(dateFormat, true));
     }
 
-    @RequestMapping(value = "/articles/save", method = RequestMethod.POST)
+    @PostMapping(value = "/articles/save")
     public String addArticle(@Valid @ModelAttribute("article") Article article, Errors errors) {
         if (errors.hasErrors()) {
             return "addForm";
@@ -67,20 +73,23 @@ public class ArticleController {
     }
 
     @RequestMapping(value = "/remove/{id}")
-    public String removeArticle(@PathVariable("id") int id) {
+    public String removeArticle(@PathVariable("id") long id) {
         this.articleService.removeArticle(id);
         return "redirect:/articles";
     }
 
     @RequestMapping(value = "/edit/{id}")
-    public String editArticle(@PathVariable("id") int id, Model model) {
+    public String editArticle(@PathVariable("id") long id, Model model) {
         model.addAttribute("article", this.articleService.getArticleById(id));
         return "addForm";
     }
 
-    @RequestMapping("articleInfo/{id}")
-    public String articleInfo(@PathVariable("id") int id, Model model) {
-        model.addAttribute("article", this.articleService.getArticleById(id));
+    @RequestMapping(value = "articleInfo/{id}", method = RequestMethod.GET)
+    public String articleInfo(@PathVariable("id") long id, Model model, @ModelAttribute("comment") Comment comment) {
+        Article article = this.articleService.getArticleById(id);
+        model.addAttribute("article", article);
+        model.addAttribute("listComments", this.commentService.getAllComments(article));
+        model.addAttribute("comment", comment);
         return "articleInfo";
     }
 
@@ -94,6 +103,13 @@ public class ArticleController {
         } else {
             modelMap.put("error", "error in remove method");
         }
+        return "redirect:/articles";
+    }
+
+    @PostMapping(value = "/comments/save/{id}")
+    public String addComment(@ModelAttribute("comment") Comment comment, @PathVariable("id") long id) {
+        System.out.println("addComment method starts");
+        this.commentService.createComment(comment, id);
         return "redirect:/articles";
     }
 }

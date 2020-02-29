@@ -3,6 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <%@ page session="false" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
@@ -37,7 +38,15 @@
                         <div class="grid-item">
                             <div class="article">
                                 <p>${article.header}</p>
-                                <p>${article.text}</p>
+                                <c:set var="articleText" value="${article.text}"/>
+                                <c:choose>
+                                <c:when test="${articleText.length() > 10}">
+                                    ${fn:substring(articleText, 0, 10).concat("...")}
+                                </c:when>
+                                <c:otherwise>
+                                    ${article.text}
+                                </c:otherwise>
+                                </c:choose>
                             </div>
                         </div>
                         <div class="grid-item">

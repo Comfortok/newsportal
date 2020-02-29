@@ -56,7 +56,7 @@
                     </form:label>
                 </div>
                 <div class="grid-item">
-                    <form:input path="text"/>
+                    <form:textarea path="text" rows="5" cols="40"/>
                     <form:errors path="text" cssStyle="color: red; font-size: 12px" />
                 </div>
                 <br/>
