@@ -36,7 +36,6 @@ public class Article {
     private User user;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @Transient
     private Set<Comment> comments;
 
     public long getId() {

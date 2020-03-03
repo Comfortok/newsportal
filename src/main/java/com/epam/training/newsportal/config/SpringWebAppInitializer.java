@@ -12,7 +12,7 @@ public class SpringWebAppInitializer extends AbstractAnnotationConfigDispatcherS
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-                WebConfig.class, HibernateConfig.class
+                HibernateConfig.class
         };
     }
 

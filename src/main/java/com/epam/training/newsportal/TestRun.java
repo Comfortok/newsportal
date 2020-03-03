@@ -1,5 +1,7 @@
 package com.epam.training.newsportal;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -7,6 +9,10 @@ import java.sql.Statement;
 
 public class TestRun {
     public static void main(String[] args) throws ClassNotFoundException {
+        String encodedA = new BCryptPasswordEncoder().encode("admin");
+        String encodedU = new BCryptPasswordEncoder().encode("user");
+        System.out.println(encodedA);
+        System.out.println(encodedU);
         try {
             Connection connection = null;
             String url = "jdbc:oracle:thin:@localhost:1521/ORCLCDB.localdomain";

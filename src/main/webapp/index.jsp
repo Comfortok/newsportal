@@ -8,6 +8,7 @@
 <h3>Articles okay</h3>
 <br/>
 <a href="<c:url value="/articles"/>">Article list</a>
+<a href="<c:url value="/welcome"/>">WELCOME</a>
 <br/>
 </body>
 </html>

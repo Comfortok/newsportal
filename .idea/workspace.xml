@@ -9,18 +9,14 @@
     <list default="true" id="a2212e11-7ef6-4c6c-99e8-3bea8cbd803c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/ArticleDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/CommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/CommentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/dao/CommentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/TestRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/TestRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/SpringWebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/SpringWebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/service/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articleInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/articleInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/training/newsportal/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="DUMMY: schema" type="3abd1b6a:OraImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="DUMMY: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="DUMMY: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="USERS: table" type="942f455b:OraImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -97,8 +116,10 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.epam.training.newsportal.entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
@@ -107,10 +128,8 @@
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\service" />
       <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\java\com\epam\training\newsportal\dao" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Olzhas_Khassenov\IdeaProjects\news-portal-project\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.epam.training.newsportal.entity" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -307,6 +326,10 @@
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -337,6 +360,7 @@
       <workItem from="1581920064059" duration="49093000" />
       <workItem from="1582260432327" duration="11426000" />
       <workItem from="1582878734944" duration="2123000" />
+      <workItem from="1583149675312" duration="17374000" />
     </task>
     <servers />
   </component>
@@ -368,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580967515276" />
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1582542548305">
+    <state x="541" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1583234692647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582542548305" />
+    <state x="541" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583234692647" />
     <state x="552" y="182" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1580901033465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -388,54 +412,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580717981473" />
-    <state width="1608" height="217" key="GridCell.Tab.0.bottom" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.0.bottom" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.0.center" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.0.center" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.0.left" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.0.left" timestamp="1583234872780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.0.right" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872780" />
+    <state width="1608" height="305" key="GridCell.Tab.0.right" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.1.bottom" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.1.bottom" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.1.center" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.1.center" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.1.left" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.1.left" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.1.right" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.1.right" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.2.bottom" timestamp="1582882056907">
+    <state width="1608" height="305" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.2.bottom" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056907" />
-    <state width="1608" height="217" key="GridCell.Tab.2.center" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.2.center" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.2.left" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.2.left" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
-    <state width="1608" height="217" key="GridCell.Tab.2.right" timestamp="1582882056906">
+    <state width="1608" height="305" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
+    <state width="1608" height="305" key="GridCell.Tab.2.right" timestamp="1583234872781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1608" height="217" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582882056906" />
+    <state width="1608" height="305" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583234872781" />
     <state x="490" y="179" key="Maven.ArtifactSearchDialog" timestamp="1582173589719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -444,6 +468,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582019384266" />
+    <state x="846" y="404" width="319" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583129648536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="846" y="404" width="319" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583129648536" />
+    <state x="727" y="88" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1583210037932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="88" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583210037932" />
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582879050771">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
